@@ -77,9 +77,9 @@ export default function Hero() {
               <div className="text-3xl font-bold text-primary mb-1">63</div>
               <div className="text-sm text-muted-foreground">Tevreden klanten</div>
             </div>
-            <div className="text-center" data-testid="stat-repeat">
-              <div className="text-3xl font-bold text-primary mb-1">6</div>
-              <div className="text-sm text-muted-foreground">Terugkerende klanten</div>
+            <div className="text-center" data-testid="stat-score">
+              <div className="text-3xl font-bold text-primary mb-1">4.94</div>
+              <div className="text-sm text-muted-foreground">Ringtwice score</div>
             </div>
           </div>
 
