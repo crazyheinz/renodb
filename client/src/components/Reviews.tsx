@@ -53,6 +53,7 @@ const stats = [
   { label: "Kwaliteit van dienst", score: 4.8 },
   { label: "Communicatie", score: 4.8 },
   { label: "Stiptheid", score: 4.9 },
+  { label: "Prijs-kwaliteit", score: 4.6 }
 ];
 
 export default function Reviews() {
