@@ -19,67 +19,67 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted pt-20">
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto text-center">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted/30 pt-20">
+      <div className="container mx-auto px-6 py-16">
+        <div className="max-w-5xl mx-auto text-center">
 
           {/* Badges */}
-          <div className="flex flex-wrap justify-center gap-3 mb-8">
-            <Badge variant="secondary" className="flex items-center space-x-1" data-testid="badge-location">
-              <MapPin className="h-3 w-3" />
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            <Badge variant="secondary" className="flex items-center space-x-2 px-4 py-2 text-sm font-medium shadow-sm" data-testid="badge-location">
+              <MapPin className="h-4 w-4" />
               <span>Gent (9000)</span>
             </Badge>
             <a 
               href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center space-x-1 bg-chart-2 text-white px-2.5 py-0.5 text-xs font-semibold rounded-md hover-elevate cursor-pointer transition-colors"
+              className="inline-flex items-center space-x-2 bg-chart-2 text-white px-4 py-2 text-sm font-semibold rounded-md hover-elevate cursor-pointer transition-all duration-200 shadow-sm"
               data-testid="badge-rating"
             >
-              <Star className="h-3 w-3 fill-current" />
+              <Star className="h-4 w-4 fill-current" />
               <span>4.94/5 - 63 reviews</span>
-              <ExternalLink className="h-3 w-3" />
+              <ExternalLink className="h-4 w-4" />
             </a>
-            <Badge variant="outline" className="flex items-center space-x-1" data-testid="badge-verified">
-              <CheckCircle className="h-3 w-3" />
+            <Badge variant="outline" className="flex items-center space-x-2 px-4 py-2 text-sm font-medium shadow-sm" data-testid="badge-verified">
+              <CheckCircle className="h-4 w-4" />
               <span>Geverifieerd Pro</span>
             </Badge>
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6" data-testid="hero-title">
-            <span className="text-primary">RenoDB</span>
+          <h1 className="text-6xl md:text-8xl font-bold text-foreground mb-8 leading-tight" data-testid="hero-title">
+            <span className="text-primary bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">RenoDB</span>
             <br />
-            Professionele Renovatie in Gent
+            <span className="text-4xl md:text-6xl font-semibold">Professionele Renovatie in Gent</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto" data-testid="hero-subtitle">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed" data-testid="hero-subtitle">
             Betrouwbare vakman met oog voor detail. Vanuit mijn IT-achtergrond koos ik bewust voor werken met mijn handen. Ik lever kwaliteit, geen haastwerk.
           </p>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-2xl mx-auto">
-            <div className="text-center" data-testid="stat-rating">
-              <div className="text-3xl font-bold text-primary mb-1">4.94/5</div>
-              <div className="text-sm text-muted-foreground">Gemiddelde score</div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16 max-w-3xl mx-auto">
+            <div className="text-center bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-border/50 shadow-sm hover-elevate transition-all duration-200" data-testid="stat-rating">
+              <div className="text-4xl font-bold text-primary mb-2">4.94/5</div>
+              <div className="text-sm font-medium text-muted-foreground">Ringtwice score</div>
             </div>
-            <div className="text-center" data-testid="stat-reviews">
-              <div className="text-3xl font-bold text-primary mb-1">63</div>
-              <div className="text-sm text-muted-foreground">Tevreden klanten</div>
+            <div className="text-center bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-border/50 shadow-sm hover-elevate transition-all duration-200" data-testid="stat-reviews">
+              <div className="text-4xl font-bold text-primary mb-2">63</div>
+              <div className="text-sm font-medium text-muted-foreground">Tevreden klanten</div>
             </div>
-            <div className="text-center" data-testid="stat-score">
-              <div className="text-3xl font-bold text-primary mb-1">4.94</div>
-              <div className="text-sm text-muted-foreground">Ringtwice score</div>
+            <div className="text-center bg-card/50 backdrop-blur-sm rounded-lg p-6 border border-border/50 shadow-sm hover-elevate transition-all duration-200" data-testid="stat-repeat">
+              <div className="text-4xl font-bold text-primary mb-2">6</div>
+              <div className="text-sm font-medium text-muted-foreground">Terugkerende klanten</div>
             </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
             <Button 
               size="lg" 
               onClick={scrollToContact}
-              className="flex items-center space-x-2"
+              className="flex items-center space-x-3 px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
               data-testid="button-contact-cta"
             >
               <Phone className="h-5 w-5" />
@@ -89,6 +89,7 @@ export default function Hero() {
               variant="outline" 
               size="lg"
               onClick={scrollToServices}
+              className="px-8 py-4 text-lg font-semibold shadow-md hover:shadow-lg transition-all duration-200"
               data-testid="button-services-cta"
             >
               Bekijk diensten
@@ -96,7 +97,7 @@ export default function Hero() {
           </div>
 
           {/* Services Preview */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
             {[
               'Schilderwerk',
               'Elektriciteit', 
@@ -107,10 +108,10 @@ export default function Hero() {
             ].map((service) => (
               <div 
                 key={service}
-                className="bg-card p-4 rounded-md border text-center hover-elevate"
+                className="bg-card/60 backdrop-blur-sm p-4 rounded-lg border border-border/30 text-center hover-elevate transition-all duration-200 shadow-sm hover:shadow-md"
                 data-testid={`service-preview-${service.toLowerCase()}`}
               >
-                <div className="text-sm font-medium text-card-foreground">{service}</div>
+                <div className="text-sm font-semibold text-card-foreground">{service}</div>
               </div>
             ))}
           </div>
