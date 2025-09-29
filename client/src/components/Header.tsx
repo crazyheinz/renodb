@@ -59,18 +59,6 @@ export default function Header() {
               Contact
             </button>
             
-            {/* Ringtwice Badge */}
-            <a 
-              href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 bg-chart-2 text-white px-3 py-1 rounded-md hover-elevate"
-              data-testid="link-ringtwice"
-            >
-              <Star className="h-4 w-4 fill-current" />
-              <span className="text-sm font-medium">4.94/5</span>
-              <ExternalLink className="h-3 w-3" />
-            </a>
           </nav>
 
           {/* Contact Button */}
@@ -128,17 +116,6 @@ export default function Header() {
                 Contact
               </button>
               
-              <a 
-                href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 bg-chart-2 text-white px-3 py-2 rounded-md w-fit"
-                data-testid="mobile-link-ringtwice"
-              >
-                <Star className="h-4 w-4 fill-current" />
-                <span className="text-sm font-medium">4.94/5 op Ringtwice</span>
-                <ExternalLink className="h-3 w-3" />
-              </a>
               
               <Button 
                 onClick={() => scrollToSection('contact')}
