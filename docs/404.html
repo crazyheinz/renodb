@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>RenoDB - Professionele Renovatiediensten in Gent</title>
+    <script>
+      // GitHub Pages SPA redirect
+      // This script redirects 404s back to the main app for client-side routing
+      const path = window.location.pathname.replace('/renodb', '');
+      const query = window.location.search;
+      const hash = window.location.hash;
+      
+      // Redirect to the main app with the path as a query parameter
+      window.location.replace('/renodb/' + (path === '/' ? '' : '?redirect=' + encodeURIComponent(path + query + hash)));
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
