@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Star, Phone, MapPin, Award, Users, CheckCircle, ExternalLink } from "lucide-react";
 import logoImage from "@assets/logo_no_background_1759141345043.png";
+import heroBackgroundImage from "@assets/image_1759147384064.png";
 
 export default function Hero() {
   const scrollToContact = () => {
@@ -19,8 +20,19 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted pt-20">
-      <div className="container mx-auto px-4 py-12">
+    <section 
+      className="relative min-h-screen flex items-center justify-center pt-20"
+      style={{
+        backgroundImage: `url(${heroBackgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-white/80 dark:bg-black/60"></div>
+      
+      <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
 
           {/* Badges */}
