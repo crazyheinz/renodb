@@ -67,65 +67,55 @@ export default function Reviews() {
   };
 
   return (
-    <section id="reviews" className="py-24 bg-gradient-to-b from-background to-muted/20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight" data-testid="reviews-title">
+    <section id="reviews" className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="reviews-title">
             Wat klanten zeggen
           </h2>
-          <p className="text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed" data-testid="reviews-subtitle">
+          <p className="text-lg text-muted-foreground mb-8" data-testid="reviews-subtitle">
             Bekijk waarom klanten Hannes zo waarderen
           </p>
 
           {/* Overall Rating */}
-          <div className="flex flex-col items-center mb-16">
-            <div className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 border border-border/50 shadow-lg max-w-md mx-auto">
-              <div className="flex items-center justify-center space-x-3 mb-4">
-                <div className="flex space-x-1">
-                  {renderStars(5)}
-                </div>
-                <span className="text-4xl font-bold text-primary" data-testid="overall-rating">4.94</span>
-                <span className="text-xl text-muted-foreground">/5</span>
+          <div className="flex flex-col items-center mb-8">
+            <div className="flex items-center space-x-2 mb-2">
+              <div className="flex space-x-1">
+                {renderStars(5)}
               </div>
-              <p className="text-muted-foreground text-lg mb-4" data-testid="review-count">
-                Gemiddelde evaluatie door 63 klanten
-              </p>
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium" data-testid="repeat-customers">
-                6 klanten hebben meerdere keren opnieuw een beroep gedaan op Hannes
-              </Badge>
+              <span className="text-3xl font-bold text-foreground" data-testid="overall-rating">4.94</span>
+              <span className="text-lg text-muted-foreground">/5</span>
             </div>
+            <p className="text-muted-foreground" data-testid="review-count">
+              Gemiddelde evaluatie door 63 klanten
+            </p>
+            <Badge variant="secondary" className="mt-2" data-testid="repeat-customers">
+              6 klanten hebben meerdere keren opnieuw een beroep gedaan op Hannes
+            </Badge>
           </div>
 
           {/* Detailed Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
             {stats.map((stat, index) => (
-              <div 
-                key={stat.label} 
-                className="text-center bg-card/40 backdrop-blur-sm rounded-lg p-4 border border-border/30 hover-elevate transition-all duration-200" 
-                data-testid={`stat-${index}`}
-              >
-                <div className="text-3xl font-bold text-primary mb-2">{stat.score}</div>
-                <div className="text-sm font-medium text-muted-foreground">{stat.label}</div>
+              <div key={stat.label} className="text-center" data-testid={`stat-${index}`}>
+                <div className="text-2xl font-bold text-primary mb-1">{stat.score}</div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* Featured Reviews */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {featuredReviews.map((review, index) => (
-            <Card 
-              key={index} 
-              className="hover-elevate transition-all duration-300 shadow-sm hover:shadow-lg border-border/50 bg-card/60 backdrop-blur-sm" 
-              data-testid={`review-card-${index}`}
-            >
+            <Card key={index} className="hover-elevate" data-testid={`review-card-${index}`}>
               <CardContent className="p-6">
-                <div className="flex items-start justify-between mb-5">
+                <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h4 className="font-semibold text-foreground text-lg" data-testid={`review-name-${index}`}>
+                    <h4 className="font-semibold text-foreground" data-testid={`review-name-${index}`}>
                       {review.name}
                     </h4>
-                    <p className="text-sm text-muted-foreground font-medium" data-testid={`review-date-${index}`}>
+                    <p className="text-sm text-muted-foreground" data-testid={`review-date-${index}`}>
                       {review.date}
                     </p>
                   </div>
@@ -134,14 +124,14 @@ export default function Reviews() {
                   </div>
                 </div>
                 
-                <Badge variant="outline" className="mb-4 px-3 py-1 font-medium" data-testid={`review-service-${index}`}>
+                <Badge variant="outline" className="mb-3" data-testid={`review-service-${index}`}>
                   {review.service}
                 </Badge>
                 
                 <div className="relative">
-                  <Quote className="absolute -top-1 -left-1 h-5 w-5 text-primary/30" />
-                  <p className="text-sm text-muted-foreground leading-relaxed pl-6" data-testid={`review-comment-${index}`}>
-                    "{review.comment}"
+                  <Quote className="absolute -top-2 -left-1 h-4 w-4 text-muted-foreground/30" />
+                  <p className="text-sm text-muted-foreground italic pl-4" data-testid={`review-comment-${index}`}>
+                    {review.comment}
                   </p>
                 </div>
               </CardContent>
@@ -151,17 +141,16 @@ export default function Reviews() {
 
         {/* CTA to Ringtwice */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-card/80 to-card/60 backdrop-blur-sm p-10 rounded-2xl max-w-3xl mx-auto border border-border/50 shadow-lg">
-            <h3 className="text-2xl font-bold mb-4" data-testid="ringtwice-cta-title">
+          <div className="bg-muted p-8 rounded-lg max-w-2xl mx-auto">
+            <h3 className="text-xl font-semibold mb-4" data-testid="ringtwice-cta-title">
               Bekijk alle reviews op Ringtwice
             </h3>
-            <p className="text-muted-foreground text-lg mb-8 leading-relaxed" data-testid="ringtwice-cta-description">
+            <p className="text-muted-foreground mb-6" data-testid="ringtwice-cta-description">
               Lees alle 63 reviews en boek direct via het Ringtwice platform
             </p>
             <Button 
               asChild
-              size="lg"
-              className="flex items-center space-x-3 mx-auto w-fit px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
+              className="flex items-center space-x-2 mx-auto w-fit"
               data-testid="button-ringtwice"
             >
               <a 
@@ -170,7 +159,7 @@ export default function Reviews() {
                 rel="noopener noreferrer"
               >
                 <span>Bekijk profiel op Ringtwice</span>
-                <ExternalLink className="h-5 w-5" />
+                <ExternalLink className="h-4 w-4" />
               </a>
             </Button>
           </div>
