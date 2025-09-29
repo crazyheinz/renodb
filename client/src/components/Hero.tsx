@@ -55,7 +55,7 @@ export default function Hero() {
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto" data-testid="hero-subtitle">
-            IT-achtergrond, maar liever met de handen bezig. Perfectionist die zich er niet rap rap vanaf maakt.
+            Betrouwbare vakman met oog voor detail. Vanuit mijn IT-achtergrond koos ik bewust voor werken met mijn handen. Ik lever kwaliteit, geen haastwerk.
           </p>
 
           {/* Stats */}
