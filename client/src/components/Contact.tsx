@@ -94,10 +94,6 @@ export default function Contact() {
                   <div className="text-xl font-bold text-primary">63</div>
                   <div className="text-xs text-muted-foreground">Reviews</div>
                 </div>
-                <div className="text-center" data-testid="quick-stat-repeat">
-                  <div className="text-xl font-bold text-primary">6</div>
-                  <div className="text-xs text-muted-foreground">Terugkerend</div>
-                </div>
               </div>
             </CardContent>
           </Card>
