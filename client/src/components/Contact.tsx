@@ -60,7 +60,7 @@ export default function Contact() {
                 <Clock className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-foreground">Werkuren</h4>
-                  <p className="text-muted-foreground">Ma-Vr: 8:00 - 18:00</p>
+                  <p className="text-muted-foreground">Ma-Vr: 9:00 - 17:00</p>
                   <p className="text-sm text-muted-foreground">Weekend: op afspraak</p>
                 </div>
               </div>
