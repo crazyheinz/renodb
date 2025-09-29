@@ -18,11 +18,8 @@ function Router() {
     }
   }, []);
 
-  // Set base path for GitHub Pages deployment
-  const base = window.location.hostname.includes('github.io') ? '/renodb' : '';
-  
   return (
-    <WouterRouter base={base}>
+    <WouterRouter>
       <Switch>
         <Route path="/" component={Home} />
         <Route component={NotFound} />

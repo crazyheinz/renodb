@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Build script voor GitHub Pages deployment
-echo "🔨 Building RenoDB website voor GitHub Pages..."
+echo "🔨 Building RenoDB website voor www.renodb.be..."
 
 # Clean en build
 npm run build
@@ -12,12 +12,13 @@ mkdir -p docs
 # Kopieer bestanden
 cp -r dist/public/* docs/
 
-# Use dynamic asset loading script (already in index.html template)
-# No need to modify paths - script handles GitHub Pages vs custom domain detection
+# Assets zijn al correct voor root level (/)
+# 404.html zorgt voor SPA routing op custom domain
 
 # Maak .nojekyll file
 touch docs/.nojekyll
 
 echo "✅ Static website klaar in docs/ folder!"
 echo "📁 Upload de docs/ folder naar GitHub en activeer GitHub Pages"
-echo "🌐 Je website wordt beschikbaar op: https://[username].github.io/[repo-name]/"
+echo "🌐 Stel custom domain in: www.renodb.be"
+echo "🔧 DNS: CNAME www → [username].github.io"
