@@ -12,9 +12,9 @@ mkdir -p docs
 # Kopieer bestanden
 cp -r dist/public/* docs/
 
-# Fix absolute paths naar relative paths
-sed -i 's|src="/assets/|src="./assets/|g' docs/index.html
-sed -i 's|href="/assets/|href="./assets/|g' docs/index.html
+# Fix absolute paths voor GitHub Pages subpath
+sed -i 's|src="/assets/|src="/renodb/assets/|g' docs/index.html
+sed -i 's|href="/assets/|href="/renodb/assets/|g' docs/index.html
 
 # Maak .nojekyll file
 touch docs/.nojekyll
