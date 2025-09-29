@@ -22,15 +22,6 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted pt-20">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Logo */}
-          <div className="mb-8">
-            <img 
-              src={logoImage} 
-              alt="RenoDB Logo" 
-              className="h-24 w-auto mx-auto mb-6"
-              data-testid="hero-logo"
-            />
-          </div>
 
           {/* Badges */}
           <div className="flex flex-wrap justify-center gap-3 mb-8">
@@ -56,10 +47,10 @@ export default function Hero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6" data-testid="hero-title">
-            Professionele Renovatie
+          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6" data-testid="hero-title">
+            <span className="text-primary">RenoDB</span>
             <br />
-            <span className="text-primary">in Gent</span>
+            Professionele Renovatie in Gent
           </h1>
 
           {/* Subtitle */}
