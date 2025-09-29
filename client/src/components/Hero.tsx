@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Star, Phone, MapPin, Award, Users, CheckCircle } from "lucide-react";
+import { Star, Phone, MapPin, Award, Users, CheckCircle, ExternalLink } from "lucide-react";
 import logoImage from "@assets/logo_no_background_1759141345043.png";
 
 export default function Hero() {
@@ -38,10 +38,17 @@ export default function Hero() {
               <MapPin className="h-3 w-3" />
               <span>Gent (9000)</span>
             </Badge>
-            <Badge className="flex items-center space-x-1 bg-chart-2 text-white" data-testid="badge-rating">
+            <a 
+              href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-1 bg-chart-2 text-white px-2.5 py-0.5 text-xs font-semibold rounded-md hover-elevate cursor-pointer transition-colors"
+              data-testid="badge-rating"
+            >
               <Star className="h-3 w-3 fill-current" />
               <span>4.94/5 - 63 reviews</span>
-            </Badge>
+              <ExternalLink className="h-3 w-3" />
+            </a>
             <Badge variant="outline" className="flex items-center space-x-1" data-testid="badge-verified">
               <CheckCircle className="h-3 w-3" />
               <span>Geverifieerd Pro</span>
