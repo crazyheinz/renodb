@@ -80,46 +80,42 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-24 bg-muted/20">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 leading-tight" data-testid="services-title">
+    <section id="services" className="py-20 bg-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="services-title">
             Hoe kan ik jou van dienst zijn?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed" data-testid="services-subtitle">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="services-subtitle">
             Van A tot Z zelf mijn huis gerenoveerd, nu zelfstandig in hoofdberoep. 
             Perfectionist die kwaliteit levert.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {services.map((service, index) => (
-            <Card 
-              key={service.title} 
-              className="hover-elevate transition-all duration-300 shadow-sm hover:shadow-lg border-border/50 bg-card/60 backdrop-blur-sm" 
-              data-testid={`service-card-${index}`}
-            >
-              <CardHeader className="text-center pb-4">
-                <div className="mx-auto mb-6 p-4 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl w-fit shadow-sm border border-primary/20">
-                  <service.icon className="h-10 w-10 text-primary" />
+            <Card key={service.title} className="hover-elevate" data-testid={`service-card-${index}`}>
+              <CardHeader className="text-center">
+                <div className="mx-auto mb-4 p-3 bg-primary/10 rounded-full w-fit">
+                  <service.icon className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-2xl font-semibold" data-testid={`service-title-${index}`}>
+                <CardTitle className="text-xl" data-testid={`service-title-${index}`}>
                   {service.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent className="pt-0">
-                <p className="text-muted-foreground mb-6 leading-relaxed" data-testid={`service-description-${index}`}>
+              <CardContent>
+                <p className="text-muted-foreground mb-4" data-testid={`service-description-${index}`}>
                   {service.description}
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {service.details.map((detail, detailIndex) => (
                     <li 
                       key={detailIndex}
-                      className="text-sm text-muted-foreground flex items-center group"
+                      className="text-sm text-muted-foreground flex items-center"
                       data-testid={`service-detail-${index}-${detailIndex}`}
                     >
-                      <span className="w-2 h-2 bg-primary rounded-full mr-4 flex-shrink-0 group-hover:bg-primary/80 transition-colors"></span>
-                      <span className="group-hover:text-foreground transition-colors">{detail}</span>
+                      <span className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></span>
+                      {detail}
                     </li>
                   ))}
                 </ul>
@@ -132,7 +128,6 @@ export default function Services() {
           <Button 
             size="lg"
             onClick={scrollToContact}
-            className="px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200"
             data-testid="button-services-contact"
           >
             Vraag een offerte aan
