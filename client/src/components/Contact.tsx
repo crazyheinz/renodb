@@ -183,9 +183,6 @@ export default function Contact() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4" data-testid="bottom-cta-text">
-            "Perfectionist die zich er niet rap rap vanaf maakt"
-          </p>
           <Button 
             size="lg"
             onClick={handleRingtwiceContact}

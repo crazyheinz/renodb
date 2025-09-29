@@ -117,9 +117,14 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-sm text-muted-foreground" data-testid="footer-copyright">
-            © {currentYear} RenoDB. Alle rechten voorbehouden.
-          </p>
+          <div className="flex flex-col items-center md:items-start space-y-1">
+            <p className="text-sm text-muted-foreground" data-testid="footer-copyright">
+              © {currentYear} RenoDB. Alle rechten voorbehouden.
+            </p>
+            <p className="text-xs text-muted-foreground" data-testid="footer-btw">
+              BTW: BE0790636904
+            </p>
+          </div>
           
           <div className="flex items-center space-x-4">
             <button 
