@@ -18,9 +18,9 @@ export default function Contact() {
     console.log('Redirecting to Ringtwice profile');
   };
 
-  const handlePhoneCall = () => {
-    console.log('Phone call initiated');
-    // In real implementation, this would open phone dialer
+  const handleWhatsAppContact = () => {
+    window.open('https://wa.me/32474968138', '_blank');
+    console.log('WhatsApp contact initiated');
   };
 
   return (
@@ -71,15 +71,15 @@ export default function Contact() {
                 <div className="space-y-2">
                   <div className="flex items-center space-x-2" data-testid="trust-verified">
                     <Shield className="h-4 w-4 text-chart-2" />
-                    <span className="text-sm text-muted-foreground">Identiteitskaart gecontroleerd</span>
+                    <span className="text-sm text-muted-foreground">Topkwaliteit gegarandeerd </span>
                   </div>
                   <div className="flex items-center space-x-2" data-testid="trust-phone">
                     <CheckCircle className="h-4 w-4 text-chart-2" />
-                    <span className="text-sm text-muted-foreground">Telefoonnummer gecontroleerd</span>
+                    <span className="text-sm text-muted-foreground">Betrouwbaar & eerlijk </span>
                   </div>
                   <div className="flex items-center space-x-2" data-testid="trust-pro">
                     <Award className="h-4 w-4 text-chart-2" />
-                    <span className="text-sm text-muted-foreground">Geverifieerd Pro op Ringtwice</span>
+                    <span className="text-sm text-muted-foreground">Ervaring van A tot Z</span>
                   </div>
                 </div>
               </div>
@@ -133,19 +133,19 @@ export default function Contact() {
               {/* Direct Contact */}
               <div className="p-6 bg-muted rounded-lg">
                 <h4 className="font-semibold text-foreground mb-2" data-testid="direct-contact-title">
-                  Direct contact
+                  Direct contact via WhatsApp
                 </h4>
                 <p className="text-sm text-muted-foreground mb-4" data-testid="direct-contact-description">
-                  Voor vragen of spoedgevallen
+                  Snel en gemakkelijk via WhatsApp
                 </p>
                 <Button 
                   variant="outline"
-                  onClick={handlePhoneCall}
+                  onClick={handleWhatsAppContact}
                   className="w-full flex items-center justify-center space-x-2"
-                  data-testid="button-phone-contact"
+                  data-testid="button-whatsapp-contact"
                 >
                   <Phone className="h-4 w-4" />
-                  <span>Bel direct</span>
+                  <span>WhatsApp</span>
                 </Button>
               </div>
 
