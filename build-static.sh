@@ -12,9 +12,8 @@ mkdir -p docs
 # Kopieer bestanden
 cp -r dist/public/* docs/
 
-# Fix absolute paths voor GitHub Pages subpath
-sed -i 's|src="/assets/|src="/renodb/assets/|g' docs/index.html
-sed -i 's|href="/assets/|href="/renodb/assets/|g' docs/index.html
+# Use dynamic asset loading script (already in index.html template)
+# No need to modify paths - script handles GitHub Pages vs custom domain detection
 
 # Maak .nojekyll file
 touch docs/.nojekyll

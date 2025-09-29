@@ -11,8 +11,25 @@
     <meta property="og:title" content="RenoDB - Professionele Renovatiediensten in Gent">
     <meta property="og:description" content="Perfectionist in renovatie met IT-achtergrond. 4.94/5 score op Ringtwice met 63 beoordelingen.">
     <meta property="og:type" content="website">
-    <script type="module" crossorigin src="/renodb/assets/index-vZCjUchj.js"></script>
-    <link rel="stylesheet" crossorigin href="/renodb/assets/index-C41OMeuK.css">
+    <script>
+      // Dynamic asset path detection for GitHub Pages vs Custom Domain
+      const isGitHubPages = window.location.hostname.includes('github.io');
+      const basePath = isGitHubPages ? '/renodb' : '';
+      
+      // Inject CSS
+      const cssLink = document.createElement('link');
+      cssLink.rel = 'stylesheet';
+      cssLink.href = basePath + '/assets/index-C41OMeuK.css';
+      cssLink.crossOrigin = '';
+      document.head.appendChild(cssLink);
+      
+      // Inject JS
+      const jsScript = document.createElement('script');
+      jsScript.type = 'module';
+      jsScript.src = basePath + '/assets/index-vZCjUchj.js';
+      jsScript.crossOrigin = '';
+      document.head.appendChild(jsScript);
+    </script>
   </head>
   <body>
     <div id="root"></div>
