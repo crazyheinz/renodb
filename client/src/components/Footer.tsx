@@ -44,7 +44,8 @@ export default function Footer() {
                 'Elektriciteit',
                 'Schrijnwerk', 
                 'Loodgieterij',
-                'Kluswerk'
+                'Kluswerk',
+                'Informatica'
               ].map((service, index) => (
                 <li key={service}>
                   <button 

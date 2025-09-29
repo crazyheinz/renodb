@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Paintbrush, Zap, Hammer, Wrench, Settings } from "lucide-react";
+import { Paintbrush, Zap, Hammer, Wrench, Settings, Monitor } from "lucide-react";
 
 const services = [
   {
@@ -56,6 +56,17 @@ const services = [
       "Probleemoplossing",
       "Algemeen onderhoud",
       "Reparaties"
+    ]
+  },
+  {
+    icon: Monitor,
+    title: "Informatica",
+    description: "10tallen jaren ervaring in de IT-sector.",
+    details: [
+      "Hardware",
+      "Software",
+      "Blockchain",
+      "AI"
     ]
   }
 ];

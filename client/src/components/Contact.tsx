@@ -160,7 +160,8 @@ export default function Contact() {
                     'Elektriciteit', 
                     'Schrijnwerk',
                     'Loodgieterij',
-                    'Kluswerk'
+                    'Kluswerk',
+                    'Informatica'
                   ].map((service, index) => (
                     <Badge 
                       key={service} 
