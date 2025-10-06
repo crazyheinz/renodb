@@ -23,7 +23,7 @@ export default function Header() {
             <img 
               src={logoImage} 
               alt="RenoDB - Professionele Renovatiediensten in Gent" 
-              className="h-20 w-auto"
+              className="h-24 w-auto"
               data-testid="logo-image"
             />
           </div>

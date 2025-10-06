@@ -19,7 +19,7 @@ export default function Footer() {
               <img 
                 src={logoImage} 
                 alt="RenoDB - Professionele Renovatiediensten" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
                 data-testid="footer-logo"
               />
             </div>
