@@ -67,7 +67,7 @@ export default function Reviews() {
   };
 
   return (
-    <section id="reviews" className="py-20">
+    <section id="reviews" className="py-20" aria-labelledby="reviews-title">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="reviews-title">

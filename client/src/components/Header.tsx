@@ -15,21 +15,21 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b" role="banner">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
               src={logoImage} 
-              alt="RenoDB Logo" 
+              alt="RenoDB - Professionele Renovatiediensten in Gent" 
               className="h-20 w-auto"
               data-testid="logo-image"
             />
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Hoofdnavigatie">
             <button 
               onClick={() => scrollToSection('services')}
               className="text-foreground hover:text-primary transition-colors"
@@ -78,6 +78,9 @@ export default function Header() {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-2 text-foreground hover:text-primary"
             data-testid="button-menu-toggle"
+            aria-label={isMenuOpen ? "Sluit menu" : "Open menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -85,8 +88,8 @@ export default function Header() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t pt-4">
-            <nav className="flex flex-col space-y-4">
+          <div className="md:hidden mt-4 pb-4 border-t pt-4" id="mobile-menu">
+            <nav className="flex flex-col space-y-4" role="navigation" aria-label="Mobiele navigatie">
               <button 
                 onClick={() => scrollToSection('services')}
                 className="text-left text-foreground hover:text-primary transition-colors"

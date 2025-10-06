@@ -44,7 +44,7 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="py-20 bg-muted/30">
+    <section id="gallery" className="py-20 bg-muted/30" aria-labelledby="gallery-title">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="gallery-title">
@@ -61,7 +61,7 @@ export default function Gallery() {
               <div className="relative aspect-[16/10] overflow-hidden">
                 <img 
                   src={item.image}
-                  alt={item.title}
+                  alt={`${item.title} - ${item.description}`}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   data-testid={`gallery-image-${index}`}
                 />

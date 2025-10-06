@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-card border-t">
+    <footer className="bg-card border-t" role="contentinfo">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="flex items-center space-x-3">
               <img 
                 src={logoImage} 
-                alt="RenoDB Logo" 
+                alt="RenoDB - Professionele Renovatiediensten" 
                 className="h-8 w-auto"
                 data-testid="footer-logo"
               />

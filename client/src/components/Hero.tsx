@@ -19,7 +19,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted pt-20">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-muted pt-20" aria-label="Introductie">
       <div className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
 
