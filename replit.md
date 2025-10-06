@@ -2,9 +2,21 @@
 
 RenoDB is a professional renovation services website for a contractor based in Gent, Belgium. The project is a full-stack web application built to showcase renovation services including painting, electrical work, carpentry, plumbing, and general handyman services. The site emphasizes trust-building through professional presentation, customer testimonials, and a verified 4.94/5 Ringtwice rating with 63 reviews.
 
+The website is fully optimized for search engines and AI chatbot discovery with comprehensive meta tags, structured data, and semantic HTML.
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+# Recent Changes
+
+## SEO and Accessibility Optimizations (October 2025)
+- **Comprehensive Meta Tags**: Added complete SEO meta tags including title, description, keywords, canonical URL, Open Graph tags, Twitter Cards, and geo-location tags
+- **Structured Data**: Implemented JSON-LD LocalBusiness schema with full business information, services catalog, ratings, and contact details
+- **Search Engine Files**: Created robots.txt, sitemap.xml endpoints for optimal search engine crawling
+- **AI Chatbot Discovery**: Added ai.txt file with business instructions for AI agents (ChatGPT, Claude, etc.) to improve discoverability via chatbots
+- **Semantic HTML**: Enhanced all components with proper semantic HTML5 elements and ARIA labels for improved accessibility
+- **Social Media Optimization**: Added Open Graph and Twitter Card meta tags with images for better social sharing previews
 
 # System Architecture
 
@@ -44,6 +56,23 @@ Preferred communication style: Simple, everyday language.
 - **Static Assets**: Images stored in attached_assets directory
 - **Mock Data**: Placeholder content for reviews and gallery items marked for replacement
 - **Design Guidelines**: Documented approach inspired by professional service platforms
+
+## SEO and Accessibility
+- **Meta Tags**: Comprehensive SEO meta tags in index.html including title, description, keywords, canonical URL, robots directives
+- **Open Graph**: Full Open Graph implementation with og:title, og:description, og:image, og:url, og:locale for social media sharing
+- **Twitter Cards**: Twitter Card meta tags for enhanced Twitter sharing with summary_large_image card type
+- **Geo Tags**: Geographic meta tags for local SEO (Gent, Belgium location)
+- **Structured Data**: JSON-LD LocalBusiness schema with:
+  - Business information (RenoDB, Hannes)
+  - Contact details (phone: +32474968138)
+  - Address (Gent, Oost-Vlaanderen, Belgium)
+  - Ratings (4.94/5 with 63 reviews)
+  - Services catalog (Schilderwerk, Elektriciteit, Schrijnwerk, Loodgieterij, Kluswerk)
+- **Semantic HTML**: All components use proper semantic HTML5 elements with ARIA labels and roles
+- **Search Engine Optimization**:
+  - `/robots.txt`: Allows all crawlers including AI bots (ChatGPT, Claude, GPTBot, anthropic-ai, Google-Extended)
+  - `/sitemap.xml`: Dynamic sitemap with homepage URL, lastmod, changefreq, priority
+  - `/ai.txt`: AI agent instructions for chatbot discovery with full business context
 
 # External Dependencies
 
