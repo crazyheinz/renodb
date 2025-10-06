@@ -78,36 +78,21 @@ export default function Reviews() {
           </p>
 
           {/* Overall Rating */}
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16 mb-8">
-            {/* Tevreden klanten */}
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-primary mb-2" data-testid="customer-count">
-                63
+          <div className="flex flex-col items-center mb-8">
+            <div className="flex items-center space-x-2 mb-2">
+              <div className="flex space-x-1">
+                {renderStars(5)}
               </div>
-              <p className="text-muted-foreground" data-testid="customer-label">
-                Tevreden klanten
-              </p>
+              <span className="text-3xl font-bold text-foreground" data-testid="overall-rating">4.94</span>
+              <span className="text-lg text-muted-foreground">/5</span>
             </div>
-
-            {/* Ringtwice Score */}
-            <div className="text-center">
-              <div className="flex items-center justify-center space-x-2 mb-2">
-                <div className="flex space-x-1">
-                  {renderStars(5)}
-                </div>
-              </div>
-              <div className="text-5xl md:text-6xl font-bold text-primary mb-2" data-testid="overall-rating">
-                4.94<span className="text-3xl text-muted-foreground">/5</span>
-              </div>
-              <p className="text-muted-foreground" data-testid="ringtwice-label">
-                Ringtwice score
-              </p>
-            </div>
+            <p className="text-muted-foreground" data-testid="review-count">
+              Gemiddelde evaluatie door 63 klanten
+            </p>
+            <Badge variant="secondary" className="mt-2" data-testid="repeat-customers">
+              6 klanten hebben meerdere keren opnieuw een beroep gedaan op Hannes
+            </Badge>
           </div>
-
-          <Badge variant="secondary" className="mb-8" data-testid="repeat-customers">
-            6 klanten hebben meerdere keren opnieuw een beroep gedaan op Hannes
-          </Badge>
 
           {/* Detailed Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
