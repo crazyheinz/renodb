@@ -48,14 +48,15 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6" data-testid="hero-title">
-            <span className="text-primary">RenoDB</span>
-            <br />
-            Professionele Renovatie in Gent
+            <span className="text-primary">RenoDB</span>: Uw Specialist in Hoogwaardige Renovaties in Gent
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto" data-testid="hero-subtitle">
-            Betrouwbare vakman met oog voor detail. Vanuit mijn IT-achtergrond koos ik bewust voor werken met mijn handen. Ik lever kwaliteit, geen haastwerk.
+          <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-3xl mx-auto font-semibold" data-testid="hero-subtitle-tagline">
+            Vakmanschap en Precisie voor Elk Project.
+          </p>
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto" data-testid="hero-subtitle">
+            Als uw betrouwbare renovatiepartner in Gent garandeer ik een nauwkeurige uitvoering met oog voor detail. Dankzij een achtergrond in IT combineer ik projectbeheer met bewezen, ambachtelijk vakmanschap. Bij RenoDB is kwaliteit de standaard, niet de uitzondering.
           </p>
 
           {/* CTA Buttons */}
