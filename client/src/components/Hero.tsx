@@ -86,12 +86,12 @@ export default function Hero() {
 
           {/* Right Column - Hero Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
-              <div className="relative rounded-full overflow-hidden shadow-2xl w-full h-full">
+            <div className="relative w-full max-w-md lg:max-w-lg">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src="/werkman-hero.png" 
-                  alt="RenoDB professional werkman"
-                  className="w-full h-full object-cover"
+                  alt="RenoDB professional renovatie specialist"
+                  className="w-full h-auto object-cover"
                   loading="eager"
                 />
               </div>
