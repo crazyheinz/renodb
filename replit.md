@@ -4,11 +4,73 @@ RenoDB is a professional renovation services website for a contractor based in G
 
 The website is fully optimized for search engines and AI chatbot discovery with comprehensive meta tags, structured data, and semantic HTML.
 
+**IMPORTANT: This project is deployed as a STATIC website to GitHub Pages at renodb.be (custom domain).**
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
 
+# Deployment Setup (CRITICAL - READ THIS!)
+
+## GitHub Pages Deployment to renodb.be
+
+**The website is hosted on GitHub Pages with custom domain renodb.be**
+
+### How Deployment Works:
+1. **Source Code**: Full-stack app in Replit (React + Express + Vite)
+2. **Build Process**: Static files generated via `build-static.sh` script
+3. **Output**: Static files placed in `docs/` folder
+4. **Hosting**: GitHub Pages serves `docs/` folder at renodb.be
+5. **Updates**: Must rebuild and push `docs/` folder to update live site
+
+### Build & Deploy Process:
+```bash
+# 1. Build static site (creates/updates docs/ folder)
+bash build-static.sh
+
+# OR manually:
+npm run build
+mkdir -p docs
+cp -r dist/public/* docs/
+touch docs/.nojekyll
+
+# 2. Pull any remote changes first (IMPORTANT!)
+git pull origin main --no-edit
+
+# 3. Commit and push to GitHub
+git add docs/
+git commit -m "Update website: [description]"
+git push origin main
+
+# 4. Wait ~2 minutes for GitHub Pages to update
+```
+
+### Key Files:
+- **build-static.sh**: Automated build script for static deployment
+- **docs/**: Static website folder (served by GitHub Pages)
+- **README-DEPLOYMENT.md**: Full deployment instructions
+- **CNAME**: Custom domain configuration (renodb.be)
+
+### GitHub Repository:
+- URL: https://github.com/crazyheinz/renodb
+- Branch: main
+- Pages Source: `/docs` folder
+- Custom Domain: renodb.be (configured via CNAME)
+
+### Important Notes:
+- **Never push dist/ folder** (it's in .gitignore)
+- **Always push docs/ folder** (this is what GitHub Pages serves)
+- **Source code changes don't auto-update live site** - must rebuild and push docs/
+- Development server (`npm run dev`) is different from production build
+
 # Recent Changes
+
+## UI Improvements (October 7, 2025)
+- **Logo Enhancement**: Increased logo size in Header (h-20 → h-24) and Footer (h-8 → h-12)
+- **Hero Simplification**: Removed statistics grid (4.94/5, 63 klanten, Ringtwice score) and services preview chips
+- **Contact Priority**: Reordered contact methods - WhatsApp now primary (with "Aanbevolen" badge), Ringtwice secondary
+- **Reviews Cleanup**: Removed detailed statistics (Kwaliteit 4.8, Communicatie 4.8, etc.) and repeat customers badge
+- **Streamlined Layout**: Cleaner, more focused user experience with less visual clutter
 
 ## SEO and Accessibility Optimizations (October 2025)
 - **Comprehensive Meta Tags**: Added complete SEO meta tags including title, description, keywords, canonical URL, Open Graph tags, Twitter Cards, and geo-location tags
