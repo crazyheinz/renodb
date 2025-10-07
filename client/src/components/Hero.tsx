@@ -86,16 +86,14 @@ export default function Hero() {
 
           {/* Right Column - Hero Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md lg:max-w-lg">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <div className="relative rounded-full overflow-hidden shadow-2xl w-full h-full">
                 <img 
                   src="/werkman-hero.png" 
                   alt="RenoDB professional werkman"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                   loading="eager"
                 />
-                {/* Optional overlay gradient for better text contrast if needed */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent pointer-events-none"></div>
               </div>
             </div>
           </div>
