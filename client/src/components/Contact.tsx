@@ -28,10 +28,10 @@ export default function Contact() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="contact-title">
-            Klaar voor jouw project?
+            Start Vandaag Nog Uw Project.
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="contact-subtitle">
-            Neem contact op voor een vrijblijvende offerte. Eerlijk, betrouwbaar en kwaliteitsvol werk gegarandeerd.
+            Vraag nu een vrijblijvende offerte aan en ervaar het verschil in kwaliteit en service.
           </p>
         </div>
 
@@ -67,19 +67,19 @@ export default function Contact() {
 
               {/* Trust Indicators */}
               <div className="space-y-3">
-                <h4 className="font-semibold text-foreground">Waarom kiezen voor RenoDB?</h4>
+                <h4 className="font-semibold text-foreground">Waarom RenoDB de Juiste Keuze is:</h4>
                 <div className="space-y-2">
-                  <div className="flex items-center space-x-2" data-testid="trust-verified">
-                    <Shield className="h-4 w-4 text-chart-2" />
-                    <span className="text-sm text-muted-foreground">Topkwaliteit gegarandeerd </span>
+                  <div className="flex items-start space-x-2" data-testid="trust-verified">
+                    <Shield className="h-4 w-4 text-chart-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground"><strong>Gegarandeerde Topkwaliteit:</strong> Wij streven naar perfectie in elk detail van de uitvoering.</span>
                   </div>
-                  <div className="flex items-center space-x-2" data-testid="trust-phone">
-                    <CheckCircle className="h-4 w-4 text-chart-2" />
-                    <span className="text-sm text-muted-foreground">Betrouwbaar & eerlijk </span>
+                  <div className="flex items-start space-x-2" data-testid="trust-phone">
+                    <CheckCircle className="h-4 w-4 text-chart-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground"><strong>Transparante Samenwerking:</strong> Duidelijke communicatie, strikte naleving van afspraken en eerlijke prijzen.</span>
                   </div>
-                  <div className="flex items-center space-x-2" data-testid="trust-pro">
-                    <Award className="h-4 w-4 text-chart-2" />
-                    <span className="text-sm text-muted-foreground">Ervaring van A tot Z</span>
+                  <div className="flex items-start space-x-2" data-testid="trust-pro">
+                    <Award className="h-4 w-4 text-chart-2 mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground"><strong>Allround Expertise:</strong> Uitgebreide en bewezen ervaring in alle facetten van renovatie, van concept tot complete oplevering.</span>
                   </div>
                 </div>
               </div>

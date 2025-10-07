@@ -5,8 +5,8 @@ import { Paintbrush, Zap, Hammer, Wrench, Settings, Monitor } from "lucide-react
 const services = [
   {
     icon: Paintbrush,
-    title: "Schilder",
-    description: "Ervaring in binnenhuis schilderen, ramen, deuren, plafonds en gevels.",
+    title: "Schilderwerk",
+    description: "Gespecialiseerd in duurzaam binnen- en buitenschilderwerk. Wij zorgen voor een vlekkeloze en esthetische afwerking van plafonds, muren, ramen, deuren en gevels.",
     details: [
       "Binnenhuis schilderwerk",
       "Ramen en deuren",
@@ -16,8 +16,8 @@ const services = [
   },
   {
     icon: Zap,
-    title: "Elektricien", 
-    description: "Eenvoudige elektriciteitswerken, extra stopcontacten en vernieuwen van verouderde materialen.",
+    title: "Elektriciteit", 
+    description: "Uitbreiding en modernisering van uw elektrische installatie. Van het aanleggen van extra stopcontacten en lichtpunten tot het vervangen van verouderde systemen, altijd conform de nieuwste veiligheidsnormen.",
     details: [
       "Extra stopcontacten",
       "Lichtpunten",
@@ -27,8 +27,8 @@ const services = [
   },
   {
     icon: Hammer,
-    title: "Schrijnwerk",
-    description: "Plaatsen van plinten, parket en tegelen tot grootste formaat 90x90.",
+    title: "Schrijnwerk & Vloeren",
+    description: "Vakkundige installatie van parket, plinten, en grootformaat tegels (tot 90x90 cm). Inclusief de professionele plaatsing van ontkoppelingsmatten voor maximale levensduur.",
     details: [
       "Plinten plaatsen",
       "Parket installatie", 
@@ -38,8 +38,8 @@ const services = [
   },
   {
     icon: Wrench,
-    title: "Loodgieter",
-    description: "Radiatoren aansluiten, leidingen aanleggen, inloopdouche of bad installeren.",
+    title: "Sanitair & Loodgieterij",
+    description: "Complete oplossingen voor waterinstallaties, waaronder het aansluiten van radiatoren, het aanleggen van leidingen, en de volledige installatie en renovatie van badkamers.",
     details: [
       "Radiatoren aansluiten",
       "Leidingen aanleggen",
@@ -49,8 +49,8 @@ const services = [
   },
   {
     icon: Settings,
-    title: "Klusjesman",
-    description: "Met internet, gezond verstand en 2 rechterhanden praktisch elke klus aanpakken.",
+    title: "Kluswerk & Oplossingen",
+    description: "Een proactieve, probleemoplossende aanpak voor diverse onderhouds- en reparatiewerkzaamheden. Uw allround partner voor elke technische uitdaging in en rond het huis.",
     details: [
       "Diverse klusjes",
       "Probleemoplossing",
@@ -60,8 +60,8 @@ const services = [
   },
   {
     icon: Monitor,
-    title: "Informatica",
-    description: "10tallen jaren ervaring in de IT-sector.",
+    title: "Informatica (Specialisatie)",
+    description: "Decennialange ervaring in de IT-sector biedt een unieke meerwaarde voor smart home integraties en gespecialiseerd advies over hardware en software.",
     details: [
       "Hardware",
       "Software",
@@ -84,11 +84,10 @@ export default function Services() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4" data-testid="services-title">
-            Hoe kan ik jou van dienst zijn?
+            De Fundering van Uw Bouwproject
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto" data-testid="services-subtitle">
-            Van A tot Z zelf mijn huis gerenoveerd, nu zelfstandig in hoofdberoep. 
-            Perfectionist die kwaliteit levert.
+            Mijn expertise is gebouwd op uitgebreide praktijkervaring, resulterend in een fulltime, onafhankelijke onderneming. Als gedreven professional lever ik uitsluitend duurzame en hoogwaardige resultaten, van start tot oplevering.
           </p>
         </div>
 
