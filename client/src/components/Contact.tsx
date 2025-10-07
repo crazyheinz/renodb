@@ -92,11 +92,31 @@ export default function Contact() {
               <CardTitle data-testid="contact-methods-title">Contact opnemen</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-              {/* Ringtwice Contact (Primary) */}
+              {/* WhatsApp Contact (Primary) */}
               <div className="p-6 bg-primary/5 rounded-lg border-2 border-primary/20">
                 <div className="flex items-center space-x-2 mb-3">
-                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
                   <Badge className="bg-chart-2 text-white">Aanbevolen</Badge>
+                </div>
+                <h4 className="font-semibold text-foreground mb-2" data-testid="direct-contact-title">
+                  Direct contact via WhatsApp
+                </h4>
+                <p className="text-sm text-muted-foreground mb-4" data-testid="direct-contact-description">
+                  Snel en gemakkelijk via WhatsApp
+                </p>
+                <Button 
+                  onClick={handleWhatsAppContact}
+                  className="w-full flex items-center justify-center space-x-2"
+                  data-testid="button-whatsapp-contact"
+                >
+                  <Phone className="h-4 w-4" />
+                  <span>WhatsApp</span>
+                </Button>
+              </div>
+
+              {/* Ringtwice Contact */}
+              <div className="p-6 bg-muted rounded-lg">
+                <div className="flex items-center space-x-2 mb-3">
+                  <Star className="h-5 w-5 text-yellow-400 fill-current" />
                 </div>
                 <h4 className="font-semibold text-foreground mb-2" data-testid="ringtwice-contact-title">
                   Boek via Ringtwice
@@ -105,31 +125,13 @@ export default function Contact() {
                   Veilig boeken via het platform, volledige bescherming en garantie
                 </p>
                 <Button 
+                  variant="outline"
                   onClick={handleRingtwiceContact}
                   className="w-full flex items-center justify-center space-x-2"
                   data-testid="button-ringtwice-contact"
                 >
                   <span>Boek op Ringtwice</span>
                   <ExternalLink className="h-4 w-4" />
-                </Button>
-              </div>
-
-              {/* Direct Contact */}
-              <div className="p-6 bg-muted rounded-lg">
-                <h4 className="font-semibold text-foreground mb-2" data-testid="direct-contact-title">
-                  Direct contact via WhatsApp
-                </h4>
-                <p className="text-sm text-muted-foreground mb-4" data-testid="direct-contact-description">
-                  Snel en gemakkelijk via WhatsApp
-                </p>
-                <Button 
-                  variant="outline"
-                  onClick={handleWhatsAppContact}
-                  className="w-full flex items-center justify-center space-x-2"
-                  data-testid="button-whatsapp-contact"
-                >
-                  <Phone className="h-4 w-4" />
-                  <span>WhatsApp</span>
                 </Button>
               </div>
 
@@ -173,12 +175,12 @@ export default function Contact() {
         <div className="text-center mt-12">
           <Button 
             size="lg"
-            onClick={handleRingtwiceContact}
+            onClick={handleWhatsAppContact}
             className="flex items-center space-x-2 mx-auto"
             data-testid="button-bottom-cta"
           >
+            <Phone className="h-4 w-4" />
             <span>Start jouw project</span>
-            <ExternalLink className="h-4 w-4" />
           </Button>
         </div>
       </div>
