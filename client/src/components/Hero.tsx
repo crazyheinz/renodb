@@ -59,7 +59,7 @@ export default function Hero() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               onClick={scrollToContact}
@@ -77,26 +77,6 @@ export default function Hero() {
             >
               Bekijk diensten
             </Button>
-          </div>
-
-          {/* Services Preview */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-4xl mx-auto">
-            {[
-              'Schilderwerk',
-              'Elektriciteit', 
-              'Schrijnwerk',
-              'Loodgieterij',
-              'Kluswerk',
-              'Informatica'
-            ].map((service) => (
-              <div 
-                key={service}
-                className="bg-card p-4 rounded-md border text-center hover-elevate"
-                data-testid={`service-preview-${service.toLowerCase()}`}
-              >
-                <div className="text-sm font-medium text-card-foreground">{service}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
