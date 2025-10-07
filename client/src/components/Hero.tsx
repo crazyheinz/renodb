@@ -48,7 +48,7 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6" data-testid="hero-title">
-            <span className="text-primary text-5xl md:text-7xl">RenoDB</span>{" "}
+            <span className="text-primary text-4xl md:text-6xl">RenoDB</span>{" "}
             <span className="text-3xl md:text-5xl font-normal">uw specialist in hoogwaardige renovaties</span>
           </h1>
 
