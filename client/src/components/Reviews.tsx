@@ -49,13 +49,6 @@ const featuredReviews = [
   }
 ];
 
-const stats = [
-  { label: "Kwaliteit van dienst", score: 4.8 },
-  { label: "Communicatie", score: 4.8 },
-  { label: "Stiptheid", score: 4.9 },
-  { label: "Prijs-kwaliteit", score: 4.6 }
-];
-
 export default function Reviews() {
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -78,7 +71,7 @@ export default function Reviews() {
           </p>
 
           {/* Overall Rating */}
-          <div className="flex flex-col items-center mb-8">
+          <div className="flex flex-col items-center mb-12">
             <div className="flex items-center space-x-2 mb-2">
               <div className="flex space-x-1">
                 {renderStars(5)}
@@ -89,19 +82,6 @@ export default function Reviews() {
             <p className="text-muted-foreground" data-testid="review-count">
               Gemiddelde evaluatie door 63 klanten
             </p>
-            <Badge variant="secondary" className="mt-2" data-testid="repeat-customers">
-              6 klanten hebben meerdere keren opnieuw een beroep gedaan op Hannes
-            </Badge>
-          </div>
-
-          {/* Detailed Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12 max-w-3xl mx-auto">
-            {stats.map((stat, index) => (
-              <div key={stat.label} className="text-center" data-testid={`stat-${index}`}>
-                <div className="text-2xl font-bold text-primary mb-1">{stat.score}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
           </div>
         </div>
 
