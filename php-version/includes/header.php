@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png" />
+    <link rel="apple-touch-icon" sizes="64x64" href="/favicon-64.png" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>RenoDB - Uw Specialist in Hoogwaardige Renovaties in Gent | 4.94/5 ⭐</title>
+    <meta name="description" content="RenoDB: uw specialist in hoogwaardige renovaties in Gent. Vakmanschap en precisie voor elk project met 4.94/5 score. Schilderwerk, elektriciteit, schrijnwerk, sanitair en meer.">
+    <meta name="keywords" content="renovatie Gent, schilderwerk Gent, elektriciteit Gent, schrijnwerk Gent, loodgieterij Gent, sanitair Gent, klusjesman Gent, renovatiediensten, hoogwaardige renovaties, RenoDB, professionele renovatie, vakman Gent">
+    <meta name="author" content="RenoDB - Hannes">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://renodb.be/">
+    
+    <!-- Additional SEO -->
+    <meta name="language" content="nl-BE">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="general">
+    
+    <meta property="og:locale" content="nl_BE">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RenoDB - Uw Specialist in Hoogwaardige Renovaties in Gent">
+    <meta property="og:description" content="Vakmanschap en precisie voor elk project. 4.94/5 score op Ringtwice met 63 beoordelingen. Specialist in schilderwerk, elektriciteit, schrijnwerk, sanitair en kluswerk.">
+    <meta property="og:url" content="https://renodb.be/">
+    <meta property="og:site_name" content="RenoDB">
+    <meta property="og:image" content="https://renodb.be/werkman-hero.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:alt" content="RenoDB - Professional renovatie specialist in Gent">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RenoDB - Uw Specialist in Hoogwaardige Renovaties in Gent">
+    <meta name="twitter:description" content="Vakmanschap en precisie voor elk project. 4.94/5 score op Ringtwice met 63 beoordelingen.">
+    <meta name="twitter:image" content="https://renodb.be/werkman-hero.png">
+    <meta name="twitter:image:alt" content="RenoDB - Professional renovatie specialist in Gent">
+    
+    <meta name="geo.region" content="BE-VOV">
+    <meta name="geo.placename" content="Gent">
+    <meta name="geo.position" content="51.0543;3.7174">
+    <meta name="ICBM" content="51.0543, 3.7174">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RenoDB",
+      "description": "RenoDB: uw specialist in hoogwaardige renovaties in Gent. Vakmanschap en precisie voor elk project met bewezen kwaliteit.",
+      "url": "https://renodb.be",
+      "telephone": "+32474968138",
+      "image": "https://renodb.be/werkman-hero.png",
+      "logo": "https://renodb.be/logo_no_background_1759141345043.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gent",
+        "postalCode": "9000",
+        "addressRegion": "Oost-Vlaanderen",
+        "addressCountry": "BE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.0543",
+        "longitude": "3.7174"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.94",
+        "bestRating": "5",
+        "worstRating": "1",
+        "ratingCount": "63",
+        "reviewCount": "63"
+      },
+      "priceRange": "€€",
+      "areaServed": {
+        "@type": "City",
+        "name": "Gent"
+      },
+      "sameAs": [
+        "https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Renovatiediensten",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Schilderwerk",
+              "description": "Gespecialiseerd in duurzaam binnen- en buitenschilderwerk met vlekkeloze en esthetische afwerking"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Elektriciteit",
+              "description": "Uitbreiding en modernisering van elektrische installaties conform nieuwste veiligheidsnormen"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Schrijnwerk & Vloeren",
+              "description": "Vakkundige installatie van parket, plinten en grootformaat tegels met professionele afwerking"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sanitair & Loodgieterij",
+              "description": "Complete oplossingen voor waterinstallaties en volledige badkamerrenovaties"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Kluswerk & Oplossingen",
+              "description": "Proactieve, probleemoplossende aanpak voor diverse onderhouds- en reparatiewerkzaamheden"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Informatica",
+              "description": "Smart home integraties en gespecialiseerd IT-advies voor moderne woningen"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="font-sans antialiased">

@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://renodb.be/sitemap.xml
+
+# ChatGPT
+User-agent: ChatGPT-User
+Allow: /
+
+# Claude
+User-agent: Claude-Web
+Allow: /
+
+# Other AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
