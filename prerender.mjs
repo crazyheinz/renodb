@@ -102,7 +102,7 @@ const seoContent = `
         <p class="text-xl mb-4">📞 Bel: +32 474 96 81 38</p>
         <p class="text-xl mb-4">📍 Werkgebied: Gent en omliggende gemeenten (Merelbeke, Deinze, Wetteren, Destelbergen, Zwijnaarde, De Pinte, Lochristi en meer)</p>
         <p class="text-xl mb-4">⏰ Openingstijden: Ma-Vr 09:00 - 17:00</p>
-        <p class="text-xl">🌐 Volg ons op <a href="https://www.google.com/maps/place/RenoDB" class="text-primary underline">Google Maps</a> of <a href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB" class="text-primary underline">Ringtwice</a></p>
+        <p class="text-xl">🌐 Vind ons op <a href="https://www.google.com/maps/place/Jos+Verdegemstraat+101A,+9040+Gent" class="text-primary underline">Google Maps</a> of bekijk onze reviews op <a href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB" class="text-primary underline">Ringtwice (4.94/5 ⭐)</a></p>
       </section>
     </main>
 
