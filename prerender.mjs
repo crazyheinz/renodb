@@ -75,20 +75,54 @@ const seoContent = `
         </div>
       </section>
 
+      <!-- Service Area Section -->
+      <section class="container py-16 bg-muted/50">
+        <h2 class="text-3xl font-bold mb-8">Werkgebied</h2>
+        <p class="text-xl mb-6">Wij bedienen Gent en omliggende gemeenten</p>
+        
+        <h3 class="text-2xl font-semibold mb-4 mt-8">Gent en deelgemeenten</h3>
+        <div class="grid md:grid-cols-4 gap-4 text-lg mb-8">
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Gent (centrum)</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Sint-Amandsberg</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Gentbrugge</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Ledeberg</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Oostakker</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Wondelgem</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Zwijnaarde</div>
+        </div>
+
+        <h3 class="text-2xl font-semibold mb-4">Omliggende gemeenten</h3>
+        <div class="grid md:grid-cols-4 gap-4 text-lg">
+          <div class="p-4 bg-background rounded-lg">📍 Merelbeke</div>
+          <div class="p-4 bg-background rounded-lg">📍 Deinze</div>
+          <div class="p-4 bg-background rounded-lg">📍 Wetteren</div>
+          <div class="p-4 bg-background rounded-lg">📍 Destelbergen</div>
+          <div class="p-4 bg-background rounded-lg">📍 De Pinte</div>
+          <div class="p-4 bg-background rounded-lg">📍 Lochristi</div>
+          <div class="p-4 bg-background rounded-lg">📍 Sint-Martens-Latem</div>
+          <div class="p-4 bg-background rounded-lg">📍 Nevele</div>
+          <div class="p-4 bg-background rounded-lg">📍 Melle</div>
+          <div class="p-4 bg-background rounded-lg">📍 Oosterzele</div>
+        </div>
+        <p class="mt-6 text-muted-foreground">Ook andere gemeenten in de regio Gent? Neem contact op voor meer informatie.</p>
+      </section>
+
       <!-- Contact Section -->
       <section id="contact" class="container py-16">
-        <h2 class="text-3xl font-bold mb-8">Neem Contact Op</h2>
-        <p class="text-xl mb-4">Bel: +32 474 96 81 38</p>
-        <p class="text-xl mb-4">Werkgebied: Gent en omgeving</p>
-        <p class="text-xl">Openingstijden: Ma-Vr 09:00 - 17:00</p>
+        <h2 class="text-3xl font-bold mb-8">Neem Contact Op met Hannes</h2>
+        <p class="text-xl mb-4">📞 Bel Hannes direct: +32 474 96 81 38</p>
+        <p class="text-xl mb-4">📍 Werkgebied: Gent (Sint-Amandsberg, Gentbrugge, Ledeberg, Oostakker, Wondelgem, Zwijnaarde) en omliggende gemeenten (Merelbeke, Deinze, Wetteren, Destelbergen, De Pinte, Lochristi en meer)</p>
+        <p class="text-xl mb-4">⏰ Openingstijden: Ma-Vr 09:00 - 17:00</p>
+        <p class="text-xl">🌐 Vind ons op <a href="https://www.google.com/maps?cid=13758937985823179826" class="text-primary underline">Google Maps</a> of bekijk onze reviews op <a href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB" class="text-primary underline">Ring Twice (Ringtwice) - 4.94/5 ⭐</a></p>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="border-t">
       <div class="container py-8">
-        <p>© 2024 RenoDB - Alle rechten voorbehouden</p>
-        <p class="text-sm text-muted-foreground">Specialist in hoogwaardige renovaties in Gent</p>
+        <p>© 2024 RenoDB - Opgericht door Hannes De Backer</p>
+        <p class="text-sm text-muted-foreground">Uw specialist in hoogwaardige renovaties in Gent | 4.94/5 op Ring Twice</p>
+        <p class="text-sm text-muted-foreground mt-2">Vakmanschap en precisie voor elk renovatieproject in Gent en omstreken</p>
       </div>
     </footer>
   </div>

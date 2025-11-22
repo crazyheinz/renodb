@@ -15,7 +15,7 @@ import {
 export default function Contact() {
   const handleRingtwiceContact = () => {
     window.open('https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB', '_blank');
-    console.log('Redirecting to Ringtwice profile');
+    console.log('Redirecting to Ring Twice profile');
   };
 
   const handleWhatsAppContact = () => {
@@ -113,13 +113,13 @@ export default function Contact() {
                 </Button>
               </div>
 
-              {/* Ringtwice Contact */}
+              {/* Ring Twice Contact */}
               <div className="p-6 bg-muted rounded-lg">
                 <div className="flex items-center space-x-2 mb-3">
                   <Star className="h-5 w-5 text-yellow-400 fill-current" />
                 </div>
                 <h4 className="font-semibold text-foreground mb-2" data-testid="ringtwice-contact-title">
-                  Boek via Ringtwice
+                  Boek via Ring Twice
                 </h4>
                 <p className="text-sm text-muted-foreground mb-4" data-testid="ringtwice-contact-description">
                   Veilig boeken via het platform, volledige bescherming en garantie
@@ -130,7 +130,7 @@ export default function Contact() {
                   className="w-full flex items-center justify-center space-x-2"
                   data-testid="button-ringtwice-contact"
                 >
-                  <span>Boek op Ringtwice</span>
+                  <span>Boek op Ring Twice</span>
                   <ExternalLink className="h-4 w-4" />
                 </Button>
               </div>
