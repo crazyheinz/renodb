@@ -71,7 +71,7 @@ export default function Footer() {
               Contact & Reviews
             </h4>
             
-            {/* Ringtwice Link */}
+            {/* Ring Twice Link */}
             <div className="space-y-3">
               <div className="flex items-center space-x-2" data-testid="footer-rating">
                 <Star className="h-4 w-4 text-yellow-400 fill-current" />
@@ -91,7 +91,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Bekijk op Ringtwice</span>
+                  <span>Bekijk op Ring Twice</span>
                   <ExternalLink className="h-3 w-3" />
                 </a>
               </Button>

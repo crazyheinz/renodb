@@ -101,7 +101,7 @@ export default function Gallery() {
               Meer voorbeelden bekijken?
             </h3>
             <p className="text-muted-foreground mb-6" data-testid="gallery-cta-description">
-              Bekijk mijn volledige portfolio op Ringtwice met foto's van afgeronde projecten
+              Bekijk mijn volledige portfolio op Ring Twice met foto's van afgeronde projecten
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 

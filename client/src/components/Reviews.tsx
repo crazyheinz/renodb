@@ -119,14 +119,14 @@ export default function Reviews() {
           ))}
         </div>
 
-        {/* CTA to Ringtwice */}
+        {/* CTA to Ring Twice */}
         <div className="text-center">
           <div className="bg-muted p-8 rounded-lg max-w-2xl mx-auto">
             <h3 className="text-xl font-semibold mb-4" data-testid="ringtwice-cta-title">
-              Bekijk alle reviews op Ringtwice
+              Bekijk alle reviews op Ring Twice
             </h3>
             <p className="text-muted-foreground mb-6" data-testid="ringtwice-cta-description">
-              Lees alle 63 reviews en boek direct via het Ringtwice platform
+              Lees alle 63 reviews en boek direct via het Ring Twice platform
             </p>
             <Button 
               asChild
@@ -138,7 +138,7 @@ export default function Reviews() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>Bekijk profiel op Ringtwice</span>
+                <span>Bekijk profiel op Ring Twice</span>
                 <ExternalLink className="h-4 w-4" />
               </a>
             </Button>
