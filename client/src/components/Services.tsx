@@ -6,56 +6,65 @@ const services = [
   {
     icon: Paintbrush,
     title: "Schilderwerk",
-    description: "Gespecialiseerd in duurzaam binnen- en buitenschilderwerk. Wij zorgen voor een vlekkeloze en esthetische afwerking van plafonds, muren, ramen, deuren en gevels.",
+    description: "Gespecialiseerd in duurzaam binnen- en buitenschilderwerk met professionele afwerking. Van gyproc plaatsen en pleisterwerk tot stukadoorswerk en het schilderen van plafonds, muren, ramen, deuren en gevels.",
     details: [
+      "Gyproc & gipsplaten plaatsen",
+      "Pleisterwerk & stukadoorswerk",
       "Binnenhuis schilderwerk",
       "Ramen en deuren",
-      "Plafonds", 
+      "Plafonds afwerking", 
       "Gevelschildering"
     ]
   },
   {
     icon: Zap,
     title: "Elektriciteit", 
-    description: "Uitbreiding en modernisering van uw elektrische installatie. Van het aanleggen van extra stopcontacten en lichtpunten tot het vervangen van verouderde systemen, altijd conform de nieuwste veiligheidsnormen.",
+    description: "Uitbreiding en modernisering van uw elektrische installatie. Van het plaatsen van extra stopcontacten en verlichting tot het vervangen van zekeringkasten en verouderde systemen, altijd conform de nieuwste veiligheidsnormen.",
     details: [
-      "Extra stopcontacten",
-      "Lichtpunten",
-      "Verouderde materialen vervangen",
-      "Elektrische installaties"
+      "Stopcontacten installeren",
+      "Verlichting & lichtpunten",
+      "Zekeringkast moderniseren",
+      "Schakelmateriaal vervangen",
+      "Elektrische installaties uitbreiden"
     ]
   },
   {
     icon: Hammer,
     title: "Schrijnwerk & Vloeren",
-    description: "Vakkundige installatie van parket, plinten, en grootformaat tegels (tot 90x90 cm). Inclusief de professionele plaatsing van ontkoppelingsmatten voor maximale levensduur.",
+    description: "Vakkundige installatie van parket, laminaat, plinten, en grootformaat tegels (tot 90x90 cm). Inclusief voorbereidend werk zoals vloerverwarming en de professionele plaatsing van ontkoppelingsmatten voor maximale levensduur.",
     details: [
+      "Parket & laminaat leggen",
       "Plinten plaatsen",
-      "Parket installatie", 
-      "Tegelen (tot 90x90)",
-      "Ontkoppelingsmatten"
+      "Vloerverwarming voorbereiden",
+      "Grootformaat tegels (tot 90x90)",
+      "Ontkoppelingsmatten",
+      "Deuren & kozijnen"
     ]
   },
   {
     icon: Wrench,
     title: "Sanitair & Loodgieterij",
-    description: "Complete oplossingen voor waterinstallaties, waaronder het aansluiten van radiatoren, het aanleggen van leidingen, en de volledige installatie en renovatie van badkamers.",
+    description: "Complete oplossingen voor waterinstallaties en sanitair. Van het plaatsen van toiletten, douches en kranen tot het aansluiten van radiatoren en de volledige renovatie van badkamers met hoogwaardige afwerking.",
     details: [
+      "Badkamer renovatie compleet",
+      "Douche & toilet plaatsen",
+      "Kranen en mengkranen",
       "Radiatoren aansluiten",
       "Leidingen aanleggen",
-      "Inloopdouche installatie",
-      "Badkamer renovatie"
+      "Inloopdouche installatie"
     ]
   },
   {
     icon: Settings,
     title: "Kluswerk & Oplossingen",
-    description: "Een proactieve, probleemoplossende aanpak voor diverse onderhouds- en reparatiewerkzaamheden. Uw allround partner voor elke technische uitdaging in en rond het huis.",
+    description: "Een proactieve, probleemoplossende aanpak voor diverse onderhouds- en renovatiewerkzaamheden. Van kleine reparaties tot complete verbouwingen - uw allround klusjesman en vakman voor elke technische uitdaging in en rond het huis.",
     details: [
-      "Diverse klusjes",
-      "Probleemoplossing",
+      "Kleine & grote renovaties",
+      "Verbouwingen & afwerking",
       "Algemeen onderhoud",
-      "Reparaties"
+      "Reparaties & herstellingen",
+      "Probleemoplossing",
+      "Klussen op maat"
     ]
   },
   {

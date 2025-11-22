@@ -38,23 +38,23 @@ const seoContent = `
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           <div>
             <h3 class="text-xl font-semibold">Schilderwerk</h3>
-            <p>Gespecialiseerd in duurzaam binnen- en buitenschilderwerk met vlekkeloze en esthetische afwerking</p>
+            <p>Gespecialiseerd in binnen- en buitenschilderwerk, gyproc plaatsen, pleisterwerk en stukadoorswerk met professionele afwerking</p>
           </div>
           <div>
             <h3 class="text-xl font-semibold">Elektriciteit</h3>
-            <p>Uitbreiding en modernisering van elektrische installaties conform nieuwste veiligheidsnormen</p>
+            <p>Stopcontacten, verlichting, zekeringkasten - modernisering van elektrische installaties conform veiligheidsnormen</p>
           </div>
           <div>
             <h3 class="text-xl font-semibold">Schrijnwerk & Vloeren</h3>
-            <p>Vakkundige installatie van parket, plinten en grootformaat tegels met professionele afwerking</p>
+            <p>Vakkundige installatie van parket, laminaat, plinten, vloerverwarming en grootformaat tegels</p>
           </div>
           <div>
             <h3 class="text-xl font-semibold">Sanitair & Loodgieterij</h3>
-            <p>Complete oplossingen voor waterinstallaties en volledige badkamerrenovaties</p>
+            <p>Complete badkamerrenovaties, douches, toiletten, kranen en waterinstallaties met hoogwaardige afwerking</p>
           </div>
           <div>
             <h3 class="text-xl font-semibold">Kluswerk & Oplossingen</h3>
-            <p>Proactieve, probleemoplossende aanpak voor diverse onderhouds- en reparatiewerkzaamheden</p>
+            <p>Van kleine reparaties tot complete verbouwingen en renovaties - uw allround klusjesman in Gent</p>
           </div>
           <div>
             <h3 class="text-xl font-semibold">Informatica</h3>
