@@ -109,19 +109,20 @@ const seoContent = `
 
       <!-- Contact Section -->
       <section id="contact" class="container py-16">
-        <h2 class="text-3xl font-bold mb-8">Neem Contact Op</h2>
-        <p class="text-xl mb-4">📞 Bel: +32 474 96 81 38</p>
+        <h2 class="text-3xl font-bold mb-8">Neem Contact Op met Hannes</h2>
+        <p class="text-xl mb-4">📞 Bel Hannes direct: +32 474 96 81 38</p>
         <p class="text-xl mb-4">📍 Werkgebied: Gent (Sint-Amandsberg, Gentbrugge, Ledeberg, Oostakker, Wondelgem, Zwijnaarde) en omliggende gemeenten (Merelbeke, Deinze, Wetteren, Destelbergen, De Pinte, Lochristi en meer)</p>
         <p class="text-xl mb-4">⏰ Openingstijden: Ma-Vr 09:00 - 17:00</p>
-        <p class="text-xl">🌐 Vind ons op <a href="https://www.google.com/maps?cid=13758937985823179826" class="text-primary underline">Google Maps</a> of bekijk onze reviews op <a href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB" class="text-primary underline">Ringtwice (4.94/5 ⭐)</a></p>
+        <p class="text-xl">🌐 Vind ons op <a href="https://www.google.com/maps?cid=13758937985823179826" class="text-primary underline">Google Maps</a> of bekijk onze reviews op <a href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB" class="text-primary underline">Ring Twice (Ringtwice) - 4.94/5 ⭐</a></p>
       </section>
     </main>
 
     <!-- Footer -->
     <footer class="border-t">
       <div class="container py-8">
-        <p>© 2024 RenoDB - Alle rechten voorbehouden</p>
-        <p class="text-sm text-muted-foreground">Specialist in hoogwaardige renovaties in Gent</p>
+        <p>© 2024 RenoDB - Opgericht door Hannes De Backer</p>
+        <p class="text-sm text-muted-foreground">Uw specialist in hoogwaardige renovaties in Gent | 4.94/5 op Ring Twice</p>
+        <p class="text-sm text-muted-foreground mt-2">Vakmanschap en precisie voor elk renovatieproject in Gent en omstreken</p>
       </div>
     </footer>
   </div>
