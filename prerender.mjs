@@ -79,13 +79,24 @@ const seoContent = `
       <section class="container py-16 bg-muted/50">
         <h2 class="text-3xl font-bold mb-8">Werkgebied</h2>
         <p class="text-xl mb-6">Wij bedienen Gent en omliggende gemeenten</p>
+        
+        <h3 class="text-2xl font-semibold mb-4 mt-8">Gent en deelgemeenten</h3>
+        <div class="grid md:grid-cols-4 gap-4 text-lg mb-8">
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Gent (centrum)</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Sint-Amandsberg</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Gentbrugge</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Ledeberg</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Oostakker</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Wondelgem</div>
+          <div class="p-4 bg-background rounded-lg border-2 border-primary">📍 Zwijnaarde</div>
+        </div>
+
+        <h3 class="text-2xl font-semibold mb-4">Omliggende gemeenten</h3>
         <div class="grid md:grid-cols-4 gap-4 text-lg">
-          <div class="p-4 bg-background rounded-lg">📍 Gent (centrum)</div>
           <div class="p-4 bg-background rounded-lg">📍 Merelbeke</div>
           <div class="p-4 bg-background rounded-lg">📍 Deinze</div>
           <div class="p-4 bg-background rounded-lg">📍 Wetteren</div>
           <div class="p-4 bg-background rounded-lg">📍 Destelbergen</div>
-          <div class="p-4 bg-background rounded-lg">📍 Zwijnaarde</div>
           <div class="p-4 bg-background rounded-lg">📍 De Pinte</div>
           <div class="p-4 bg-background rounded-lg">📍 Lochristi</div>
           <div class="p-4 bg-background rounded-lg">📍 Sint-Martens-Latem</div>
@@ -100,7 +111,7 @@ const seoContent = `
       <section id="contact" class="container py-16">
         <h2 class="text-3xl font-bold mb-8">Neem Contact Op</h2>
         <p class="text-xl mb-4">📞 Bel: +32 474 96 81 38</p>
-        <p class="text-xl mb-4">📍 Werkgebied: Gent en omliggende gemeenten (Merelbeke, Deinze, Wetteren, Destelbergen, Zwijnaarde, De Pinte, Lochristi en meer)</p>
+        <p class="text-xl mb-4">📍 Werkgebied: Gent (Sint-Amandsberg, Gentbrugge, Ledeberg, Oostakker, Wondelgem, Zwijnaarde) en omliggende gemeenten (Merelbeke, Deinze, Wetteren, Destelbergen, De Pinte, Lochristi en meer)</p>
         <p class="text-xl mb-4">⏰ Openingstijden: Ma-Vr 09:00 - 17:00</p>
         <p class="text-xl">🌐 Vind ons op <a href="https://www.google.com/maps?cid=13758937985823179826" class="text-primary underline">Google Maps</a> of bekijk onze reviews op <a href="https://ringtwice.be/nl/listworkers/244537?from=marketing&parrainage=HANNESDEB" class="text-primary underline">Ringtwice (4.94/5 ⭐)</a></p>
       </section>
