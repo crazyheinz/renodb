@@ -3,35 +3,51 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Eye, ExternalLink } from "lucide-react";
 import painterImage from "@assets/generated_images/Professional_painter_at_work_bacdf019.png";
+import painterImageWebp from "@assets/generated_images/Professional_painter_at_work_bacdf019.webp";
 import electricianImage from "@assets/generated_images/Electrician_installation_work_0d658561.png";
+import electricianImageWebp from "@assets/generated_images/Electrician_installation_work_0d658561.webp";
 import flooringImage from "@assets/generated_images/Hardwood_floor_installation_f1b829f8.png";
+import flooringImageWebp from "@assets/generated_images/Hardwood_floor_installation_f1b829f8.webp";
 import plumbingImage from "@assets/generated_images/Bathroom_plumbing_work_bfc5f55f.png";
+import plumbingImageWebp from "@assets/generated_images/Bathroom_plumbing_work_bfc5f55f.webp";
 
 // todo: remove mock functionality - replace with real project images
 const galleryItems = [
   {
     image: painterImage,
+    imageWebp: painterImageWebp,
     title: "Professioneel Schilderwerk",
     category: "Schilder",
-    description: "Kwaliteitsvol binnenschilderwerk met aandacht voor detail"
+    description: "Kwaliteitsvol binnenschilderwerk met aandacht voor detail",
+    width: 800,
+    height: 435
   },
   {
     image: electricianImage,
+    imageWebp: electricianImageWebp,
     title: "Elektrische Installaties", 
     category: "Elektricien",
-    description: "Veilige en moderne elektrische aansluitingen"
+    description: "Veilige en moderne elektrische aansluitingen",
+    width: 800,
+    height: 435
   },
   {
     image: flooringImage,
+    imageWebp: flooringImageWebp,
     title: "Parket & Vloeren",
     category: "Schrijnwerk", 
-    description: "Professionele vloerinstallatie met perfecte afwerking"
+    description: "Professionele vloerinstallatie met perfecte afwerking",
+    width: 800,
+    height: 435
   },
   {
     image: plumbingImage,
+    imageWebp: plumbingImageWebp,
     title: "Badkamer Renovatie",
     category: "Loodgieter",
-    description: "Complete badkamerinstallaties en renovaties"
+    description: "Complete badkamerinstallaties en renovaties",
+    width: 800,
+    height: 435
   }
 ];
 
@@ -59,12 +75,18 @@ export default function Gallery() {
           {galleryItems.map((item, index) => (
             <Card key={index} className="overflow-hidden hover-elevate group" data-testid={`gallery-item-${index}`}>
               <div className="relative aspect-[16/10] overflow-hidden">
-                <img 
-                  src={item.image}
-                  alt={`${item.title} - ${item.description}`}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  data-testid={`gallery-image-${index}`}
-                />
+                <picture>
+                  <source srcSet={item.imageWebp} type="image/webp" />
+                  <img 
+                    src={item.image}
+                    alt={`${item.title} - ${item.description}`}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    width={item.width}
+                    height={item.height}
+                    data-testid={`gallery-image-${index}`}
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <Button 
                     variant="secondary" 

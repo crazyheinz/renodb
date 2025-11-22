@@ -88,12 +88,17 @@ export default function Hero() {
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md lg:max-w-lg">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="/werkman-hero.png" 
-                  alt="RenoDB professional renovatie specialist"
-                  className="w-full h-auto object-cover"
-                  loading="eager"
-                />
+                <picture>
+                  <source srcSet="/werkman-hero.webp" type="image/webp" />
+                  <img 
+                    src="/werkman-hero.png" 
+                    alt="RenoDB professional renovatie specialist"
+                    className="w-full h-auto object-cover"
+                    loading="eager"
+                    width="1200"
+                    height="1105"
+                  />
+                </picture>
               </div>
             </div>
           </div>
